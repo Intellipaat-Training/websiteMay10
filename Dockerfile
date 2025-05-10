@@ -1,5 +1,5 @@
 FROM ubuntu
 RUN apt udpate
 RUN apt install apache2 -y
-ADD . /var/wwww/html
+ADD . /var/www/html
 ENTRYPOINT apachectl -D FOREGROUND
